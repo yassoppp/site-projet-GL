@@ -1,0 +1,28 @@
+---
+main:
+  - name: Accueil
+    ref: /_index.md
+  - name: Actualité du Projet GL 2022
+    ref: /actualites
+  - name: Palmarès projet GL
+    ref: /palmares
+  - name: Environnement
+    ref: /environnement/_index.md
+    sub:
+      - name: Faire le Projet GL sur une machine personnelle
+        ref: /environnement/machine_perso
+      - name: Mac OS X
+        ref: /environnement/mac_os
+      - name: Maven
+        ref: /environnement/maven
+      - name: Vim
+        ref: /environnement/vim
+      - name: Emacs
+        ref: /environnement/emacs
+  - name: Git
+    ref: /git/_index.md
+    sub:
+      - name: Amphi git avancé
+        ref: /git/amphi
+  - name: Organiser des rétrospectives
+    ref: /retrospectives

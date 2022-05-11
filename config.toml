@@ -1,0 +1,40 @@
+baseURL = 'https://projet-gl.pages.ensimag.fr/'
+title = 'Projet GL'
+theme = "hugo-geekdoc"
+relativeURLs = true
+canonifyURLs = true
+
+[params]
+    geekdocMenuBundle = true
+
+    # (Optional, default none) Set source repository location. Used for 'Edit this page' links.
+    # You can also specify this parameter per page in front matter.
+    geekdocRepo = "https://gitlab.ensimag.fr/projet-gl/projet-gl.pages.ensimag.fr"
+
+    # (Optional, default none) Enable 'Edit this page' links. Requires 'GeekdocRepo' param
+    # and path must point to 'content' directory of repo.
+    # You can also specify this parameter per page in front matter.
+    geekdocEditPath = ""
+    geekdocEditUrl = "https://gitlab.ensimag.fr/-/ide/project/projet-gl/projet-gl.pages.ensimag.fr/tree/master/-"
+
+pluralizeListTitles = false
+
+# Geekdoc required configuration
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
+
+# Required if you want to render robots.txt template
+enableRobotsTXT = true
+
+# Needed for mermaid shortcodes
+[markup]
+  [markup.goldmark.renderer]
+    # Needed for mermaid shortcode
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 9
+
+[taxonomies]
+   tag = "tags"
